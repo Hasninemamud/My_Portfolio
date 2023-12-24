@@ -1,0 +1,233 @@
+header {
+  background-color: white;
+  padding: 10px 0;
+  color: #007bff;
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  
+  
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  
+}
+
+nav li {
+  margin: 0 10px;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: 	black;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: 	#4682b4;
+}
+
+/* Hamburger Icon for smaller screens */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  text-align: right;
+}
+
+/* Dropdown menu for smaller screens */
+.dropdown {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: beige;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(76, 114, 238, 0.1);
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 20px;
+}
+h2{
+  margin-right: 5%;
+  color: black;
+}
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  nav ul {
+      display: none;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+  .dropdown.show {
+      display: flex;
+  }
+}
+/* Image and text in the header */
+/* Image and text in the header */
+#img {
+  background-color: #f0f0f0; /* Choose your desired color */
+  padding: 20px;
+  text-align: center; /* Center the content */
+}
+
+#img img {
+  width: 200px; /* Adjust as needed */
+  border-radius: 50%;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+#img p {
+  font-weight: bold;
+}
+
+
+/* Style the "about" section */
+#about {
+  background-color: #f8f8f8; /* Choose your desired color */
+  padding: 20px;
+}
+
+/* Style the "resume" section */
+
+/* Style the highlighted section */
+.highlight {
+  background-color: #f0f0f0; /* Choose your desired color */
+  padding: 20px;
+}
+.resume {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.resume:hover {
+  background-color: #0067cc; /* Optional hover effect */
+}
+#icon img{
+  text-align: center;
+  margin: 10px;
+  
+  
+
+}
+
+  /* Skills section */
+  #skill img {
+    width: 50px; /* Adjust as needed */
+    margin: 10px;
+    text-align: center;
+  }
+  /* Project section */
+  .project-wrapper {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project {
+    width: 300px; /* Adjust as needed */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project img {
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+  }
+  
+  .project h3 {
+    margin-top: 10px;
+  }
+  
+  .project p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  h2{
+    text-align: center;
+  }
+  
+  #contact_nm {
+    background-color: #f9f9f9; /* Background color for the contact section */
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
+
+#contactForm {
+  width: 300px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+}
+
+
+
+#contactForm input,
+#contactForm textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#contactForm button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#footer{
+  text-align: center;
+  padding: 30px;
+  font-size: medium;
+}

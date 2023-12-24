@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.K.M Hasnine Mamud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const body = document.body;
+            const toggleButton = document.getElementById("dark-mode-toggle");
+
+            // Check if dark mode preference is stored in local storage
+            const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+
+            // Apply dark mode if the preference is stored
+            if (isDarkMode) {
+                body.classList.add("dark-mode");
+                toggleButton.checked = true;
+            }
+
+            // Toggle dark mode on button click
+            toggleButton.addEventListener("change", function () {
+                body.classList.toggle("dark-mode");
+                const enableDarkMode = body.classList.contains("dark-mode");
+                localStorage.setItem("darkMode", enableDarkMode ? "enabled" : "disabled");
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+    // Get all sections
+    const sections = document.querySelectorAll("section");
+
+    // Function to highlight the selected section
+    function highlightSection(sectionId) {
+        sections.forEach((section) => {
+            section.classList.remove("highlight");
+        });
+
+        const selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.classList.add("highlight");
+        }
+    }
+
+    // Call the function with the desired section ID
+    highlightSection("img");
+});
+// Prevent default form submission
+const contactForm = document.getElementById('contactForm');
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  // Validate user input (example for name field)
+  const nameInput = document.getElementById('name');
+
+  if (nameInput.value.trim() === '') {
+    alert('Please enter your name.');
+    return;
+  }
+
+  // Send form data via email or display a success message
+  // (Integrate with server-side logic for actual email sending)
+  alert('Your message has been sent!');
+});
+
+
+    function toggleDropdown() {
+        var dropdown = document.getElementById("dropdown");
+        dropdown.classList.toggle("show");
+    }
+
+            
+        
+
+    </script>
+
+    
+
+    <!-- Header -->
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#img">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contactForm">Contact</a></li>
+            </ul>
+            <h2>Welcome To My Website</h2>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" onclick="toggleDropdown()">☰</div>
+            <!-- Dropdown Menu -->
+            <div class="dropdown" id="dropdown">
+                <a href="#img">About</a>
+                <a href="#skill">Skill</a>
+                <a href="#projects">Project</a>
+                <a href="#contactForm">Contact</a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- Main Content -->
+    <main >
+        <!-- About Section -->
+        <section id="img">
+            <img src="hemel.png" alt="Hasnine Mamud">
+            <h1>Hi, I'm Hasnine Mamud</h1>
+            <p><strong>Python Developer | Full-stack Software Engineer</strong></p>
+        </section>
+
+        <!-- Detailed About Section -->
+        <section id="about">
+            <p>
+                Hello, I'm <strong>Hasnine Mamud</strong>, a dedicated IT enthusiast with a fervent focus on <strong>Python and Django</strong> development.
+                As a charismatic communicator both in speech and writing, I bring a unique blend of technical prowess and effective interpersonal skills to the table.
+                I am actively seeking opportunities in the IT sector where I can channel my knowledge and courage into impactful projects. If you're looking for a dynamic
+                and dedicated Python and Django developer, let's connect! Let's build something amazing together! Feel free to reach out for collaboration, networking,
+                or discussions on all things tech. </p>
+                <a href="A.K.M Hasnine Mamud Resume.pdf" class="resume" target="_blank">Download Resume</a>
+               
+            
+            
+            
+        </section>
+        
+
+        <!-- Resume Download Section -->
+        
+
+        
+        <!-- Skills Section -->
+        <h2>My skills are:</h2>
+        <section id="skill">
+            <img src="letter-c.png" alt="C">
+            <img src="python.png" alt="python">
+            <img src="AWS.png" alt="Amazon web server">
+            <img src="css-3.png" alt="CSS">
+            <img src="html5.png" alt="HTML5">
+            <img src="database.png" alt="MySQL">
+            <img src="django.png" alt="Django">
+            <img src="php.png" alt="PHP">
+            <img src="git.png" alt="GIT">
+            <img src="github.png" alt="GitHub">
+            <img src="tailwindcss.png" alt="Tailwindcss">
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-wrapper">
+                <div class="project">
+                    <img src="Screenshot (33).png" alt="Project 1 Image">
+                    <h3>Railway Management System</h3>
+                    <p>Project 1 description.</p>
+                    <a href="project1-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-wrapper">
+                <div class="project">
+                    <img src="Screenshot (33).png" alt="Project 1 Image">
+                    <h3>Railway Management System</h3>
+                    <p>Project 1 description.</p>
+                    <a href="project1-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-wrapper">
+                <div class="project">
+                    <img src="Screenshot (33).png" alt="Project 1 Image">
+                    <h3>Railway Management System</h3>
+                    <p>Project 1 description.</p>
+                    <a href="project1-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-wrapper">
+                <div class="project">
+                    <img src="Screenshot (33).png" alt="Project 1 Image">
+                    <h3>Railway Management System</h3>
+                    <p>Project 1 description.</p>
+                    <a href="project1-link">View Project</a>
+                </div>
+            </div>
+        </section><br><br>
+        
+            
+        
+        <section>
+            <h2>Let's Work Together</h2></section>
+            <form id="contactForm">
+                
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+          
+              <button type="submit">Send Message</button>
+            </form><br><br>
+          
+      </main>
+
+    <!-- Footer Section -->
+    <section id="footer">
+        <!-- Social Icons Section -->
+        <section id="icon">
+            <a href="https://www.facebook.com/akmhasninemamud/"><img src="facebook.png" alt="fb"></a>
+            <a href="https://www.instagram.com/hasnine_hemel/?next=%2F"><img src="instagram (1).png" alt=""></a>
+            <a href="https://www.linkedin.com/in/hasninemamud/"><img src="linkedin (1).png" alt=""></a>
+            <a href="https://github.com/Hasninemamud"><img src="github (1).png" alt=""></a>
+            <a href="mailto:hasninehemel85@gmail.com"><img src="gmail (1).png" alt=""></a>
+        </section>
+
+    <footer>
+        &copy Hasnine Mamud; All right reserved 2023
+    </footer>
+</section>
+</body>
+</html>
