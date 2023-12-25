@@ -12,6 +12,7 @@ nav {
   font-weight: bold;
   
   
+  
 }
 
 nav ul {
@@ -91,6 +92,7 @@ h2{
   background-color: #f0f0f0; /* Choose your desired color */
   padding: 20px;
   text-align: center; /* Center the content */
+  font-family: Arial Narrow;
 }
 
 #img img {
@@ -109,6 +111,7 @@ h2{
 
 #img p {
   font-weight: bold;
+  
 }
 
 
@@ -116,6 +119,9 @@ h2{
 #about {
   background-color: #f8f8f8; /* Choose your desired color */
   padding: 20px;
+  font-family: Arial Narrow;
+  font-style: normal;
+  font: 1em sans-serif;
 }
 
 /* Style the "resume" section */
