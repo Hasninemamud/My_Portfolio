@@ -48,6 +48,7 @@ nav a:hover {
   display: none;
   cursor: pointer;
   text-align: right;
+  font-size: 32px;
 }
 
 /* Dropdown menu for smaller screens */
