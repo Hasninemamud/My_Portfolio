@@ -10,6 +10,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+  font-size: 20px;
   
   
   
@@ -41,7 +42,7 @@ nav a {
 
 nav a:hover {
   background-color: #fff;
-  color: 	#4682b4;
+  color: 	#0074d3;
 }
 
 /* Hamburger Icon for smaller screens */
@@ -68,9 +69,9 @@ nav a:hover {
   display: block;
   padding: 10px 20px;
 }
-h2{
-  margin-right: 5%;
-  color: black;
+#header_h2{
+  margin-right: 8%;
+  color: #F39C12;
 }
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
@@ -93,6 +94,7 @@ h2{
   padding: 20px;
   text-align: center; /* Center the content */
   font-family: Arial Narrow;
+  font-size: 20px;
 }
 
 #img img {
@@ -157,11 +159,39 @@ h2{
 }
 
   /* Skills section */
-  #skill img {
-    width: 50px; /* Adjust as needed */
-    margin: 10px;
+  #skill {
     text-align: center;
+    padding: 20px;
   }
+  
+  .skill-item {
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
+  }
+  
+  .skill-item img {
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item img:hover {
+    transform: scale(1.2); /* Increase size on hover */
+  }
+  
+  .skill-item p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  /* Add additional styling as needed */
+  
+  
+  /* Repeat the pattern for other skills */
+  
   /* Project section */
   .project-wrapper {
     display: inline-block;
@@ -189,14 +219,36 @@ h2{
   .project h3 {
     margin-top: 10px;
   }
-  
-  .project p {
-    font-size: 14px;
-    line-height: 1.5;
+  .project a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #24292e; /* GitHub's background color */
+    color: #ffffff; /* GitHub's text color */
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border: 1px solid #24292e; /* Border color matching GitHub's background */
+    box-sizing: border-box;
   }
+  
+  .project a:hover {
+    background-color: #1473d1; /* Darker color on hover */
+    border-color: #2c3136; /* Darker border color on hover */
+  }
+  
+  .project a.github-link {
+    display: inline-block;
+  }
+  
+
   h2{
     text-align: center;
   }
+
+  
+  
   
   #contact_nm {
     background-color: #f9f9f9; /* Background color for the contact section */
